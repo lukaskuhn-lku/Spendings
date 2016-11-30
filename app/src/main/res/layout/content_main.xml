@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="de.rocketfox.spendings.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/colorPrimary"
+        android:id="@+id/layout_main_budgetInfo">
+
+        <TextView
+            android:id="@+id/text_main_BudgetDisplay"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/textColor_bright"
+            android:textSize="@dimen/text_infoBig"
+            android:fontFamily="sans-serif-thin"
+            />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_main_transactions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</LinearLayout>
